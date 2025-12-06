@@ -9,9 +9,9 @@ while True:
     if b == a:
         print("Congratulations! You guessed the correct number.")
         break
-    elif b < a:
+    elif b-a < 10:
         print("Your guess is too low. Try again!")
-    elif b > a:
+    elif b-a > 10:
         print("Your guess is too high. Try again!")
     else:
         print("Invalid input.")
